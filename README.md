@@ -2,7 +2,7 @@
 version 18
 
 ##About
-These is Gapminder's official trends for GDP per capita expressed in constant prices adjusted for inflation and price differences between countries. We update the base year for price adjustments whenever new PPP estimates are made available from ICP. This dataset combines two kinds of sources: 1. Long histroic trends and 2. Modern estimates form official contemporary sources. In this way we bridge the gap between the historic data and recent development, to be able to visualize a consistant history from the past to the present. This data changes when new estimates are made available, roughly on a yearly basis. If you find problems with the data or have any quesitons, please contact: https://getsatisfaction.com/gapminder/#problem
+This is Gapminder's official trends for GDP per capita expressed in constant prices adjusted for inflation and price differences between countries. We update the base year for price adjustments whenever new PPP estimates are made available from ICP. This dataset combines two kinds of sources: 1. Long histroic trends and 2. Modern estimates form official contemporary sources. In this way we bridge the gap between the historic data and recent development, to be able to visualize a consistant history from the past to the present. This data changes when new estimates are made available, roughly on a yearly basis. If you find problems with the data or have any quesitons, please contact: https://getsatisfaction.com/gapminder/#problem
 
 ##Documentation version 18
 The data for recent years (1990 - 2015) comes from the World Bank indicator: http://data.worldbank.org/indicator/NY.GDP.PCAP.PP.KD
