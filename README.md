@@ -1,4 +1,4 @@
-# GDP per capita in latest available constant ICP-PPP dollars
+# GDP per capita, constant PPP
 version 18
 
 ##About
