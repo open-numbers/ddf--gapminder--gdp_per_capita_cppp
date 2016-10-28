@@ -6,7 +6,7 @@ These are the official Gapminder's time-series for GDP per capita. This dataset 
 
 ##Documentation version 18
 The data for recent years (1990 - 2015) comes from the World Bank indicator: http://data.worldbank.org/indicator/NY.GDP.PCAP.PP.KD
-The long hisotirc trends are combined by Mattias Lindgren and documented here: https://www.gapminder.org/data/documentation/gd001/
+The long historic trends are combined from historic records by Mattias Lindgren and documented here: https://www.gapminder.org/data/documentation/gd001/
 The historic source is mainly based on Maddison data(http://www.ggdc.net/maddison/maddison-project/home.htm), which are not expressed in PPP 2011. We have used a rough method to adjust the historic trends, to hit the World Bank estimates of 1990. This method will be better documented in the future, and we are happy to explain it in detail upon request. But in rough terms we have made calculations that  maintain the total income growth of world over 200 years, as seen in Maddison's data. While we also adjust every countries trajectory so that it smoothly adjusts towards the level in World Bank data of 1990.
 
 ###Special cases
