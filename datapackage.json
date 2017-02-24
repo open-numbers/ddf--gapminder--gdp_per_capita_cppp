@@ -1,0 +1,65 @@
+{
+    "name": "ddf--gapminder--gdp_per_capita_cppp",
+    "language": {
+        "id": "en"
+    },
+    "resources": [
+        {
+            "path": "ddf--concepts.csv",
+            "name": "ddf--concepts",
+            "schema": {
+                "primaryKey": "concept",
+                "fields": [
+                    {
+                        "name": "concept"
+                    },
+                    {
+                        "name": "name"
+                    },
+                    {
+                        "name": "concept_type"
+                    },
+                    {
+                        "name": "indicator_url"
+                    }
+                ]
+            }
+        },
+        {
+            "path": "ddf--datapoints--gdp_per_capita_cppp--by--geo--time.csv",
+            "name": "ddf--datapoints--gdp_per_capita_cppp--by--geo--time",
+            "schema": {
+                "primaryKey": [
+                    "geo",
+                    "time"
+                ],
+                "fields": [
+                    {
+                        "name": "geo"
+                    },
+                    {
+                        "name": "time"
+                    },
+                    {
+                        "name": "gdp_per_capita_cppp"
+                    }
+                ]
+            }
+        },
+        {
+            "path": "ddf--entities--geo.csv",
+            "name": "ddf--entities--geo",
+            "schema": {
+                "primaryKey": "geo",
+                "fields": [
+                    {
+                        "name": "name"
+                    },
+                    {
+                        "name": "geo"
+                    }
+                ]
+            }
+        }
+    ]
+}
