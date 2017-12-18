@@ -3,12 +3,12 @@
     "language": {
         "id": "en"
     },
+    "created": "2017-12-18T08:07:10.028284+00:00",
     "resources": [
         {
             "path": "ddf--concepts.csv",
             "name": "ddf--concepts",
             "schema": {
-                "primaryKey": "concept",
                 "fields": [
                     {
                         "name": "concept"
@@ -22,17 +22,29 @@
                     {
                         "name": "indicator_url"
                     }
-                ]
+                ],
+                "primaryKey": "concept"
+            }
+        },
+        {
+            "path": "ddf--entities--geo.csv",
+            "name": "ddf--entities--geo",
+            "schema": {
+                "fields": [
+                    {
+                        "name": "name"
+                    },
+                    {
+                        "name": "geo"
+                    }
+                ],
+                "primaryKey": "geo"
             }
         },
         {
             "path": "ddf--datapoints--gdp_per_capita_cppp--by--geo--time.csv",
             "name": "ddf--datapoints--gdp_per_capita_cppp--by--geo--time",
             "schema": {
-                "primaryKey": [
-                    "geo",
-                    "time"
-                ],
                 "fields": [
                     {
                         "name": "geo"
@@ -43,23 +55,66 @@
                     {
                         "name": "gdp_per_capita_cppp"
                     }
-                ]
-            }
-        },
-        {
-            "path": "ddf--entities--geo.csv",
-            "name": "ddf--entities--geo",
-            "schema": {
-                "primaryKey": "geo",
-                "fields": [
-                    {
-                        "name": "name"
-                    },
-                    {
-                        "name": "geo"
-                    }
+                ],
+                "primaryKey": [
+                    "geo",
+                    "time"
                 ]
             }
         }
-    ]
+    ],
+    "ddfSchema": {
+        "concepts": [
+            {
+                "primaryKey": [
+                    "concept"
+                ],
+                "value": "indicator_url",
+                "resources": [
+                    "ddf--concepts"
+                ]
+            },
+            {
+                "primaryKey": [
+                    "concept"
+                ],
+                "value": "concept_type",
+                "resources": [
+                    "ddf--concepts"
+                ]
+            },
+            {
+                "primaryKey": [
+                    "concept"
+                ],
+                "value": "name",
+                "resources": [
+                    "ddf--concepts"
+                ]
+            }
+        ],
+        "entities": [
+            {
+                "primaryKey": [
+                    "geo"
+                ],
+                "value": "name",
+                "resources": [
+                    "ddf--entities--geo"
+                ]
+            }
+        ],
+        "datapoints": [
+            {
+                "primaryKey": [
+                    "geo",
+                    "time"
+                ],
+                "value": "gdp_per_capita_cppp",
+                "resources": [
+                    "ddf--datapoints--gdp_per_capita_cppp--by--geo--time"
+                ]
+            }
+        ]
+    }
 }
