@@ -3,7 +3,7 @@
     "language": {
         "id": "en"
     },
-    "created": "2018-03-12T06:31:29.161990+00:00",
+    "created": "2018-03-27T08:06:56.678657+00:00",
     "resources": [
         {
             "path": "ddf--entities--geo--global.csv",
@@ -18,6 +18,48 @@
                     }
                 ],
                 "primaryKey": "global"
+            }
+        },
+        {
+            "path": "ddf--datapoints--income_per_person_gdppercapita_ppp_inflation_adjusted--by--country--year.csv",
+            "name": "ddf--datapoints--income_per_person_gdppercapita_ppp_inflation_adjusted--by--country--year",
+            "schema": {
+                "fields": [
+                    {
+                        "name": "country"
+                    },
+                    {
+                        "name": "year"
+                    },
+                    {
+                        "name": "income_per_person_gdppercapita_ppp_inflation_adjusted"
+                    }
+                ],
+                "primaryKey": [
+                    "country",
+                    "year"
+                ]
+            }
+        },
+        {
+            "path": "ddf--datapoints--income_per_person_gdppercapita_ppp_inflation_adjusted--by--global--year.csv",
+            "name": "ddf--datapoints--income_per_person_gdppercapita_ppp_inflation_adjusted--by--global--year",
+            "schema": {
+                "fields": [
+                    {
+                        "name": "global"
+                    },
+                    {
+                        "name": "year"
+                    },
+                    {
+                        "name": "income_per_person_gdppercapita_ppp_inflation_adjusted"
+                    }
+                ],
+                "primaryKey": [
+                    "global",
+                    "year"
+                ]
             }
         },
         {
@@ -59,81 +101,21 @@
                         "name": "concept"
                     },
                     {
-                        "name": "about_file_generic"
-                    },
-                    {
-                        "name": "about_gapminder_data"
-                    },
-                    {
-                        "name": "about_geo"
-                    },
-                    {
-                        "name": "about_license"
-                    },
-                    {
-                        "name": "about_regions"
-                    },
-                    {
-                        "name": "attribution_snippet"
-                    },
-                    {
                         "name": "concept_type"
-                    },
-                    {
-                        "name": "description"
                     },
                     {
                         "name": "domain"
                     },
                     {
-                        "name": "info_developers"
-                    },
-                    {
-                        "name": "license_name"
-                    },
-                    {
-                        "name": "link_download"
-                    },
-                    {
-                        "name": "link_feedback"
-                    },
-                    {
-                        "name": "link_license"
-                    },
-                    {
                         "name": "name"
-                    },
-                    {
-                        "name": "permalink_file"
-                    },
-                    {
-                        "name": "permalink_repo"
-                    },
-                    {
-                        "name": "source_link"
-                    },
-                    {
-                        "name": "source_text_long"
-                    },
-                    {
-                        "name": "source_text_short"
-                    },
-                    {
-                        "name": "updated_by"
-                    },
-                    {
-                        "name": "updated_date"
-                    },
-                    {
-                        "name": "version"
                     }
                 ],
                 "primaryKey": "concept"
             }
         },
         {
-            "path": "ddf--datapoints--gdp_per_capita_cppp--by--world_4region--year.csv",
-            "name": "ddf--datapoints--gdp_per_capita_cppp--by--world_4region--year",
+            "path": "ddf--datapoints--income_per_person_gdppercapita_ppp_inflation_adjusted--by--world_4region--year.csv",
+            "name": "ddf--datapoints--income_per_person_gdppercapita_ppp_inflation_adjusted--by--world_4region--year",
             "schema": {
                 "fields": [
                     {
@@ -143,53 +125,11 @@
                         "name": "year"
                     },
                     {
-                        "name": "gdp_per_capita_cppp"
+                        "name": "income_per_person_gdppercapita_ppp_inflation_adjusted"
                     }
                 ],
                 "primaryKey": [
                     "world_4region",
-                    "year"
-                ]
-            }
-        },
-        {
-            "path": "ddf--datapoints--gdp_per_capita_cppp--by--country--year.csv",
-            "name": "ddf--datapoints--gdp_per_capita_cppp--by--country--year",
-            "schema": {
-                "fields": [
-                    {
-                        "name": "country"
-                    },
-                    {
-                        "name": "year"
-                    },
-                    {
-                        "name": "gdp_per_capita_cppp"
-                    }
-                ],
-                "primaryKey": [
-                    "country",
-                    "year"
-                ]
-            }
-        },
-        {
-            "path": "ddf--datapoints--gdp_per_capita_cppp--by--global--year.csv",
-            "name": "ddf--datapoints--gdp_per_capita_cppp--by--global--year",
-            "schema": {
-                "fields": [
-                    {
-                        "name": "global"
-                    },
-                    {
-                        "name": "year"
-                    },
-                    {
-                        "name": "gdp_per_capita_cppp"
-                    }
-                ],
-                "primaryKey": [
-                    "global",
                     "year"
                 ]
             }
@@ -201,187 +141,7 @@
                 "primaryKey": [
                     "concept"
                 ],
-                "value": "version",
-                "resources": [
-                    "ddf--concepts"
-                ]
-            },
-            {
-                "primaryKey": [
-                    "concept"
-                ],
-                "value": "info_developers",
-                "resources": [
-                    "ddf--concepts"
-                ]
-            },
-            {
-                "primaryKey": [
-                    "concept"
-                ],
-                "value": "source_text_long",
-                "resources": [
-                    "ddf--concepts"
-                ]
-            },
-            {
-                "primaryKey": [
-                    "concept"
-                ],
-                "value": "link_license",
-                "resources": [
-                    "ddf--concepts"
-                ]
-            },
-            {
-                "primaryKey": [
-                    "concept"
-                ],
-                "value": "permalink_file",
-                "resources": [
-                    "ddf--concepts"
-                ]
-            },
-            {
-                "primaryKey": [
-                    "concept"
-                ],
-                "value": "updated_by",
-                "resources": [
-                    "ddf--concepts"
-                ]
-            },
-            {
-                "primaryKey": [
-                    "concept"
-                ],
-                "value": "about_gapminder_data",
-                "resources": [
-                    "ddf--concepts"
-                ]
-            },
-            {
-                "primaryKey": [
-                    "concept"
-                ],
-                "value": "attribution_snippet",
-                "resources": [
-                    "ddf--concepts"
-                ]
-            },
-            {
-                "primaryKey": [
-                    "concept"
-                ],
                 "value": "name",
-                "resources": [
-                    "ddf--concepts"
-                ]
-            },
-            {
-                "primaryKey": [
-                    "concept"
-                ],
-                "value": "license_name",
-                "resources": [
-                    "ddf--concepts"
-                ]
-            },
-            {
-                "primaryKey": [
-                    "concept"
-                ],
-                "value": "source_text_short",
-                "resources": [
-                    "ddf--concepts"
-                ]
-            },
-            {
-                "primaryKey": [
-                    "concept"
-                ],
-                "value": "source_link",
-                "resources": [
-                    "ddf--concepts"
-                ]
-            },
-            {
-                "primaryKey": [
-                    "concept"
-                ],
-                "value": "about_regions",
-                "resources": [
-                    "ddf--concepts"
-                ]
-            },
-            {
-                "primaryKey": [
-                    "concept"
-                ],
-                "value": "about_file_generic",
-                "resources": [
-                    "ddf--concepts"
-                ]
-            },
-            {
-                "primaryKey": [
-                    "concept"
-                ],
-                "value": "link_feedback",
-                "resources": [
-                    "ddf--concepts"
-                ]
-            },
-            {
-                "primaryKey": [
-                    "concept"
-                ],
-                "value": "concept_type",
-                "resources": [
-                    "ddf--concepts"
-                ]
-            },
-            {
-                "primaryKey": [
-                    "concept"
-                ],
-                "value": "link_download",
-                "resources": [
-                    "ddf--concepts"
-                ]
-            },
-            {
-                "primaryKey": [
-                    "concept"
-                ],
-                "value": "updated_date",
-                "resources": [
-                    "ddf--concepts"
-                ]
-            },
-            {
-                "primaryKey": [
-                    "concept"
-                ],
-                "value": "description",
-                "resources": [
-                    "ddf--concepts"
-                ]
-            },
-            {
-                "primaryKey": [
-                    "concept"
-                ],
-                "value": "about_geo",
-                "resources": [
-                    "ddf--concepts"
-                ]
-            },
-            {
-                "primaryKey": [
-                    "concept"
-                ],
-                "value": "permalink_repo",
                 "resources": [
                     "ddf--concepts"
                 ]
@@ -399,7 +159,7 @@
                 "primaryKey": [
                     "concept"
                 ],
-                "value": "about_license",
+                "value": "concept_type",
                 "resources": [
                     "ddf--concepts"
                 ]
@@ -413,8 +173,8 @@
                 "value": "name",
                 "resources": [
                     "ddf--entities--geo--global",
-                    "ddf--entities--geo--world_4region",
-                    "ddf--entities--geo--country"
+                    "ddf--entities--geo--country",
+                    "ddf--entities--geo--world_4region"
                 ]
             }
         ],
@@ -424,11 +184,11 @@
                     "geo",
                     "year"
                 ],
-                "value": "gdp_per_capita_cppp",
+                "value": "income_per_person_gdppercapita_ppp_inflation_adjusted",
                 "resources": [
-                    "ddf--datapoints--gdp_per_capita_cppp--by--country--year",
-                    "ddf--datapoints--gdp_per_capita_cppp--by--global--year",
-                    "ddf--datapoints--gdp_per_capita_cppp--by--world_4region--year"
+                    "ddf--datapoints--income_per_person_gdppercapita_ppp_inflation_adjusted--by--global--year",
+                    "ddf--datapoints--income_per_person_gdppercapita_ppp_inflation_adjusted--by--country--year",
+                    "ddf--datapoints--income_per_person_gdppercapita_ppp_inflation_adjusted--by--world_4region--year"
                 ]
             }
         ]
