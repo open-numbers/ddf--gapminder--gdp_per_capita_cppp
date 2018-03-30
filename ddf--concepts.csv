@@ -1,34 +1,9 @@
-concept,about_file_generic,about_gapminder_data,about_geo,about_license,about_regions,attribution_snippet,concept_type,description,domain,info_developers,license_name,link_download,link_feedback,link_license,name,permalink_file,permalink_repo,source_link,source_text_long,source_text_short,updated_by,updated_date,version
-gdp_per_capita_cppp,"This file contains data compiled by Gapminder.org, based on multiple sources, as described in the documentation link below. The data is part of Gapminder effort to build a fact-based worldview by showing the big picture of global development. When we find multiple data sources that haven't been combined we combine them into one consistent timeseries. This often results in large data uncertainty, as the underlaying data-sources use different methodologies etc. But we still dare to combine data that hasn't been combined, as we find it extremely important to visualize the big picture, which people otherwise tend to get absolutely wrong. Before using our data for any other purpose though, please read the documentation to make sure you are aware of our levels of doubts in the data.",Here are Gapminder’s guidelines on reasonable doubt for different kinds of data: gapm.io/doubt.,"In order to make it easy for people to follow the development of the countries they are familiar with. Our data refer to countries in the past as if they always had the boundaries they have today. Historic territories, such as USSR may sometimes also have estimates in out datatables, so be careful not to sum all rows into a total, as you will then double count many people. See gapm.io/geob.","You can use this data in any way you like as long as you attribute Gapminder.org as mentioned below. Gapminder makes this data available for any use, under the Creative Common Attribution Licence 4.0, which requires the following attribution, citation:","To show the big picture, Gapminder has divided the world into four regions with roughly equal areas. Here's the list of what countries are included in what reigon: gapm.io/ireg","""Free data from www.gapminder.org""",measure,GDP per capita based on purchasing power parity (PPP). PPP GDP is gross domestic product converted to international dollars using purchasing power parity rates. An international dollar has the same purchasing power over GDP as the U.S. dollar has in the United States. GDP at purchaser's prices is the sum of gross value added by all resident producers in the economy plus any product taxes and minus any subsidies not included in the value of the products. It is calculated without making deductions for depreciation of fabricated assets or for depletion and degradation of natural resources. Data are in constant 2011 international dollars.,,"If you like to integrate lots of Gapminder data you should instead look at the githib repo Open-Numbers, with hundreds of indicators in a standard csv format, including this indicator: https://github.com/open-numbers",CC BY-4: Creative Common Attribution Licence 4.0,https://github.com/Gapminder-Indicators/gdppc_cppp/blob/master/gdppc_cppp.xlsx,https://getsatisfaction.com/gapminder/products/gapminder_data,gapm.io/data_license,"GDP per capita, PPP (constant 2011 international $)",https://github.com/Gapminder-Indicators/gdppc_cppp/blob/master/gdppc_cppp.xlsx,https://github.com/Gapminder-Indicators/GDP-per-capita-constant-ppp,gapm.io/dgdppc,"This data is compiled mainly from these sources:
-a. World Bank: For the period 1990 to 2016, data is identical to The World Bank's indicator: GDP per capita constant PPP 2011, (except for a few countries that were estimated by Gapminder, including Syria and Cuba). See: gapm.io/xwb171
-b. Maddison: Data before 1990, is based on Gapminder's historic estimates by Mattias Lindgren, which mainly uses Maddison data. See: gapm.io/histdata.
-c. IMF: Data after 2016 uses IMF's forecasts for GDP per capita WEO 2017, october revision: gapm.io/ximfw
-d. The IMF forecast reaches only to 2022. Beyond that point we have extended the series to 2040, with the hypothetical assumption, that all countries converge to a modest economic growth rate of 2.2%. The forecasts we only use to project the ","Gapminder based on World Bank, A. Maddison, M. Lindgren, IMF and more.",Ola Rosling,"March 7, 2018",25
-code,,,,,,,string,About the data,,,,,,,Code,,,,,,,,
-name,,,,,,,string,Indicator name,,,,,,,Name,,,,,,,,
-description,,,,,,,string,Indicator description,,,,,,,Description,,,,,,,,
-source_text_short,,,,,,,string,Source text short,,,,,,,Source Text Short,,,,,,,,
-source_text_long,,,,,,,string,Source text long,,,,,,,Source Text Long,,,,,,,,
-source_link,,,,,,,string,Documentation link,,,,,,,Source Link,,,,,,,,
-link_download,,,,,,,string,Download latest version here,,,,,,,Link Download,,,,,,,,
-version,,,,,,,string,Data version,,,,,,,Version,,,,,,,,
-updated_date,,,,,,,string,Updated on date,,,,,,,Updated Date,,,,,,,,
-updated_by,,,,,,,string,Updated by,,,,,,,Updated By,,,,,,,,
-about_file_generic,,,,,,,string,About this file,,,,,,,About File Generic,,,,,,,,
-about_geo,,,,,,,string,About geographic boundaries,,,,,,,About Geo,,,,,,,,
-about_regions,,,,,,,string,Regional aggregates,,,,,,,About Regions,,,,,,,,
-about_gapminder_data,,,,,,,string,Read more about Gapminder's Indicators and data doubt guidelines.,,,,,,,About Gapminder Data,,,,,,,,
-link_feedback,,,,,,,string,Feedback,,,,,,,Link Feedback,,,,,,,,
-about_license,,,,,,,string,About license,,,,,,,About License,,,,,,,,
-license_name,,,,,,,string,License,,,,,,,License Name,,,,,,,,
-attribution_snippet,,,,,,,string,Attribution,,,,,,,Attribution Snippet,,,,,,,,
-link_license,,,,,,,string,License link,,,,,,,Link License,,,,,,,,
-info_developers,,,,,,,string,Info to developers,,,,,,,Info Developers,,,,,,,,
-permalink_file,,,,,,,string,Github permalink to latest version of this file with permanent file name,,,,,,,Permalink File,,,,,,,,
-permalink_repo,,,,,,,string,Github repository,,,,,,,Permalink Repo,,,,,,,,
-geo,,,,,,,entity_domain,,,,,,,,Geo,,,,,,,,
-country,,,,,,,entity_set,,geo,,,,,,Country,,,,,,,,
-world_4region,,,,,,,entity_set,,geo,,,,,,four regions,,,,,,,,
-global,,,,,,,entity_set,,geo,,,,,,global,,,,,,,,
-domain,,,,,,,string,,,,,,,,Domain,,,,,,,,
-year,,,,,,,time,,,,,,,,Year,,,,,,,,
+concept,concept_type,domain,name
+income_per_person_gdppercapita_ppp_inflation_adjusted,measure,,"GDP per capita, constant PPP"
+name,string,,Name
+geo,entity_domain,,Geo
+country,entity_set,geo,Country
+world_4region,entity_set,geo,four regions
+global,entity_set,geo,global
+domain,string,,Domain
+year,time,,Year
