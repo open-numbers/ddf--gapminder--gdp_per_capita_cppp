@@ -3,95 +3,8 @@
     "language": {
         "id": "en"
     },
-    "created": "2018-03-27T08:06:56.678657+00:00",
+    "created": "2018-12-25T07:06:20.705013+00:00",
     "resources": [
-        {
-            "path": "ddf--entities--geo--global.csv",
-            "name": "ddf--entities--geo--global",
-            "schema": {
-                "fields": [
-                    {
-                        "name": "global"
-                    },
-                    {
-                        "name": "name"
-                    }
-                ],
-                "primaryKey": "global"
-            }
-        },
-        {
-            "path": "ddf--datapoints--income_per_person_gdppercapita_ppp_inflation_adjusted--by--country--year.csv",
-            "name": "ddf--datapoints--income_per_person_gdppercapita_ppp_inflation_adjusted--by--country--year",
-            "schema": {
-                "fields": [
-                    {
-                        "name": "country"
-                    },
-                    {
-                        "name": "year"
-                    },
-                    {
-                        "name": "income_per_person_gdppercapita_ppp_inflation_adjusted"
-                    }
-                ],
-                "primaryKey": [
-                    "country",
-                    "year"
-                ]
-            }
-        },
-        {
-            "path": "ddf--datapoints--income_per_person_gdppercapita_ppp_inflation_adjusted--by--global--year.csv",
-            "name": "ddf--datapoints--income_per_person_gdppercapita_ppp_inflation_adjusted--by--global--year",
-            "schema": {
-                "fields": [
-                    {
-                        "name": "global"
-                    },
-                    {
-                        "name": "year"
-                    },
-                    {
-                        "name": "income_per_person_gdppercapita_ppp_inflation_adjusted"
-                    }
-                ],
-                "primaryKey": [
-                    "global",
-                    "year"
-                ]
-            }
-        },
-        {
-            "path": "ddf--entities--geo--country.csv",
-            "name": "ddf--entities--geo--country",
-            "schema": {
-                "fields": [
-                    {
-                        "name": "country"
-                    },
-                    {
-                        "name": "name"
-                    }
-                ],
-                "primaryKey": "country"
-            }
-        },
-        {
-            "path": "ddf--entities--geo--world_4region.csv",
-            "name": "ddf--entities--geo--world_4region",
-            "schema": {
-                "fields": [
-                    {
-                        "name": "world_4region"
-                    },
-                    {
-                        "name": "name"
-                    }
-                ],
-                "primaryKey": "world_4region"
-            }
-        },
         {
             "path": "ddf--concepts.csv",
             "name": "ddf--concepts",
@@ -101,37 +14,70 @@
                         "name": "concept"
                     },
                     {
-                        "name": "concept_type"
-                    },
-                    {
-                        "name": "domain"
-                    },
-                    {
                         "name": "name"
+                    },
+                    {
+                        "name": "concept_type"
                     }
                 ],
                 "primaryKey": "concept"
             }
         },
         {
-            "path": "ddf--datapoints--income_per_person_gdppercapita_ppp_inflation_adjusted--by--world_4region--year.csv",
-            "name": "ddf--datapoints--income_per_person_gdppercapita_ppp_inflation_adjusted--by--world_4region--year",
+            "path": "ddf--datapoints--gdp_total--by--geo--year.csv",
+            "name": "ddf--datapoints--gdp_total--by--geo--year",
             "schema": {
                 "fields": [
                     {
-                        "name": "world_4region"
+                        "name": "geo"
                     },
                     {
                         "name": "year"
                     },
                     {
-                        "name": "income_per_person_gdppercapita_ppp_inflation_adjusted"
+                        "name": "gdp_total"
                     }
                 ],
                 "primaryKey": [
-                    "world_4region",
+                    "geo",
                     "year"
                 ]
+            }
+        },
+        {
+            "path": "ddf--datapoints--income_per_person--by--geo--year.csv",
+            "name": "ddf--datapoints--income_per_person--by--geo--year",
+            "schema": {
+                "fields": [
+                    {
+                        "name": "geo"
+                    },
+                    {
+                        "name": "year"
+                    },
+                    {
+                        "name": "income_per_person"
+                    }
+                ],
+                "primaryKey": [
+                    "geo",
+                    "year"
+                ]
+            }
+        },
+        {
+            "path": "ddf--entities--geo.csv",
+            "name": "ddf--entities--geo",
+            "schema": {
+                "fields": [
+                    {
+                        "name": "geo"
+                    },
+                    {
+                        "name": "name"
+                    }
+                ],
+                "primaryKey": "geo"
             }
         }
     ],
@@ -141,25 +87,16 @@
                 "primaryKey": [
                     "concept"
                 ],
-                "value": "name",
-                "resources": [
-                    "ddf--concepts"
-                ]
-            },
-            {
-                "primaryKey": [
-                    "concept"
-                ],
-                "value": "domain",
-                "resources": [
-                    "ddf--concepts"
-                ]
-            },
-            {
-                "primaryKey": [
-                    "concept"
-                ],
                 "value": "concept_type",
+                "resources": [
+                    "ddf--concepts"
+                ]
+            },
+            {
+                "primaryKey": [
+                    "concept"
+                ],
+                "value": "name",
                 "resources": [
                     "ddf--concepts"
                 ]
@@ -172,9 +109,7 @@
                 ],
                 "value": "name",
                 "resources": [
-                    "ddf--entities--geo--global",
-                    "ddf--entities--geo--country",
-                    "ddf--entities--geo--world_4region"
+                    "ddf--entities--geo"
                 ]
             }
         ],
@@ -184,13 +119,22 @@
                     "geo",
                     "year"
                 ],
-                "value": "income_per_person_gdppercapita_ppp_inflation_adjusted",
+                "value": "gdp_total",
                 "resources": [
-                    "ddf--datapoints--income_per_person_gdppercapita_ppp_inflation_adjusted--by--global--year",
-                    "ddf--datapoints--income_per_person_gdppercapita_ppp_inflation_adjusted--by--country--year",
-                    "ddf--datapoints--income_per_person_gdppercapita_ppp_inflation_adjusted--by--world_4region--year"
+                    "ddf--datapoints--gdp_total--by--geo--year"
+                ]
+            },
+            {
+                "primaryKey": [
+                    "geo",
+                    "year"
+                ],
+                "value": "income_per_person",
+                "resources": [
+                    "ddf--datapoints--income_per_person--by--geo--year"
                 ]
             }
-        ]
+        ],
+        "synonyms": []
     }
 }

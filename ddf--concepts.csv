@@ -1,9 +1,6 @@
-concept,concept_type,domain,name
-income_per_person_gdppercapita_ppp_inflation_adjusted,measure,,"GDP per capita, constant PPP"
-name,string,,Name
-geo,entity_domain,,Geo
-country,entity_set,geo,Country
-world_4region,entity_set,geo,four regions
-global,entity_set,geo,global
-domain,string,,Domain
-year,time,,Year
+concept,name,concept_type
+income_per_person,Income per person,measure
+gdp_total,GDP total,measure
+geo,Geo,entity_domain
+name,Name,string
+year,Time,time
