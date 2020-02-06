@@ -6,10 +6,10 @@ import pandas as pd
 from ddf_utils.io import open_google_spreadsheet, serve_datapoint
 
 
-DOCID = '1n9ql6TebePZEDtxVd3JwBgFwqsz5JV4RzcR9GoKz0kg'
+DOCID = '10vHiHnBQre07TwX75vTc_H1lf-w5-hbe5mZH4ro6QNE'
 SHEET = 'data-for-countries-etc-by-year'
 
-DIMENSIONS = ['geo', 'year']
+DIMENSIONS = ['geo', 'time']
 OUT_DIR = '../../'
 
 COLUMN_TO_CONCEPT = {'Income per person': 'income_per_person_gdppercapita_ppp_inflation_adjusted',
