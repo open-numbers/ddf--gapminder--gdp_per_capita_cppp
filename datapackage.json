@@ -3,11 +3,15 @@
     "language": {
         "id": "en"
     },
-    "created": "2018-12-26T16:30:04.888059+00:00",
+    "title": "ddf--gapminder--gdp_per_capita_cppp",
+    "description": "",
+    "author": "",
+    "license": "",
+    "created": "2020-02-06T12:35:49.505056+00:00",
     "resources": [
         {
-            "path": "ddf--concepts.csv",
             "name": "ddf--concepts",
+            "path": "ddf--concepts.csv",
             "schema": {
                 "fields": [
                     {
@@ -24,15 +28,15 @@
             }
         },
         {
-            "path": "ddf--datapoints--gdp_total_ppp_inflation_adjusted--by--geo--year.csv",
-            "name": "ddf--datapoints--gdp_total_ppp_inflation_adjusted--by--geo--year",
+            "name": "ddf--datapoints--gdp_total_ppp_inflation_adjusted--by--geo--time",
+            "path": "ddf--datapoints--gdp_total_ppp_inflation_adjusted--by--geo--time.csv",
             "schema": {
                 "fields": [
                     {
                         "name": "geo"
                     },
                     {
-                        "name": "year"
+                        "name": "time"
                     },
                     {
                         "name": "gdp_total_ppp_inflation_adjusted"
@@ -40,20 +44,20 @@
                 ],
                 "primaryKey": [
                     "geo",
-                    "year"
+                    "time"
                 ]
             }
         },
         {
-            "path": "ddf--datapoints--income_per_person_gdppercapita_ppp_inflation_adjusted--by--geo--year.csv",
-            "name": "ddf--datapoints--income_per_person_gdppercapita_ppp_inflation_adjusted--by--geo--year",
+            "name": "ddf--datapoints--income_per_person_gdppercapita_ppp_inflation_adjusted--by--geo--time",
+            "path": "ddf--datapoints--income_per_person_gdppercapita_ppp_inflation_adjusted--by--geo--time.csv",
             "schema": {
                 "fields": [
                     {
                         "name": "geo"
                     },
                     {
-                        "name": "year"
+                        "name": "time"
                     },
                     {
                         "name": "income_per_person_gdppercapita_ppp_inflation_adjusted"
@@ -61,13 +65,13 @@
                 ],
                 "primaryKey": [
                     "geo",
-                    "year"
+                    "time"
                 ]
             }
         },
         {
-            "path": "ddf--entities--geo.csv",
             "name": "ddf--entities--geo",
+            "path": "ddf--entities--geo.csv",
             "schema": {
                 "fields": [
                     {
@@ -117,21 +121,21 @@
             {
                 "primaryKey": [
                     "geo",
-                    "year"
+                    "time"
                 ],
                 "value": "gdp_total_ppp_inflation_adjusted",
                 "resources": [
-                    "ddf--datapoints--gdp_total_ppp_inflation_adjusted--by--geo--year"
+                    "ddf--datapoints--gdp_total_ppp_inflation_adjusted--by--geo--time"
                 ]
             },
             {
                 "primaryKey": [
                     "geo",
-                    "year"
+                    "time"
                 ],
                 "value": "income_per_person_gdppercapita_ppp_inflation_adjusted",
                 "resources": [
-                    "ddf--datapoints--income_per_person_gdppercapita_ppp_inflation_adjusted--by--geo--year"
+                    "ddf--datapoints--income_per_person_gdppercapita_ppp_inflation_adjusted--by--geo--time"
                 ]
             }
         ],

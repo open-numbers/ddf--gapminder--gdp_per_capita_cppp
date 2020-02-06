@@ -3,4 +3,4 @@ income_per_person_gdppercapita_ppp_inflation_adjusted,Income per person,measure
 gdp_total_ppp_inflation_adjusted,GDP total,measure
 geo,Geo,entity_domain
 name,Name,string
-year,Time,time
+time,Time,time

@@ -44,7 +44,7 @@ def main():
     measures_df['concept_type'] = 'measure'
 
     discrete_df = pd.DataFrame.from_dict(
-        dict(concept=['geo', 'name', 'year'],
+        dict(concept=['geo', 'name', 'time'],
              name=['Geo', 'Name', 'Time'],
              concept_type=['entity_domain', 'string', 'time'])
     )
