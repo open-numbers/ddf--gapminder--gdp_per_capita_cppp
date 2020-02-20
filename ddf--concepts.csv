@@ -1,7 +1,6 @@
-concept,name,concept_type,indicator_url
-name,Name,string,
-time,Time,time,
-gdp_per_capita_cppp,"GDP per capita, constant PPP",measure,https://github.com/open-numbers/ddf--gapminder--gdp_per_capita_cppp
-domain,Domain,string,
-geo,Country,entity_domain,
-indicator_url,Indicator URL,string,
+concept,name,concept_type
+income_per_person_gdppercapita_ppp_inflation_adjusted,Income per person,measure
+gdp_total_ppp_inflation_adjusted,GDP total,measure
+geo,Geo,entity_domain
+name,Name,string
+time,Time,time

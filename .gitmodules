@@ -1,0 +1,3 @@
+[submodule "etl/source/gdppc_cppp"]
+	path = etl/source/gdppc_cppp
+	url = https://github.com/Gapminder-Indicators/gdppc_cppp/

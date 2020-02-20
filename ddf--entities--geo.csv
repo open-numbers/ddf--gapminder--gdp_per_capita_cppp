@@ -1,205 +1,196 @@
-name,geo
-Afghanistan,afg
-Albania,alb
-Algeria,dza
-Andorra,and
-Angola,ago
-Antigua and Barbuda,atg
-Argentina,arg
-Armenia,arm
-Aruba,abw
-Australia,aus
-Austria,aut
-Azerbaijan,aze
-Bahamas,bhs
-Bahrain,bhr
-Bangladesh,bgd
-Barbados,brb
-Belarus,blr
-Belgium,bel
-Belize,blz
-Benin,ben
-Bermuda,bmu
-Bhutan,btn
-Bolivia,bol
-Bosnia and Herzegovina,bih
-Botswana,bwa
-Brazil,bra
-Brunei,brn
-Bulgaria,bgr
-Burkina Faso,bfa
-Burundi,bdi
-Cambodia,khm
-Cameroon,cmr
-Canada,can
-Cape Verde,cpv
-Cayman Islands,cym
-Central African Republic,caf
-Chad,tcd
-Chile,chl
-China,chn
-Colombia,col
-Comoros,com
-"Congo, Dem. Rep.",cod
-"Congo, Rep.",cog
-Costa Rica,cri
-Cote d'Ivoire,civ
-Croatia,hrv
-Cuba,cub
-Cyprus,cyp
-Czech Republic,cze
-Denmark,dnk
-Djibouti,dji
-Dominica,dma
-Dominican Republic,dom
-Ecuador,ecu
-Egypt,egy
-El Salvador,slv
-Equatorial Guinea,gnq
-Eritrea,eri
-Estonia,est
-Ethiopia,eth
-Fiji,fji
-Finland,fin
-France,fra
-Gabon,gab
-Gambia,gmb
-Georgia,geo
-Germany,deu
-Ghana,gha
-Greece,grc
-Greenland,grl
-Grenada,grd
-Guatemala,gtm
-Guinea,gin
-Guinea-Bissau,gnb
-Guyana,guy
-Haiti,hti
-Honduras,hnd
-"Hong Kong, China",hkg
-Hungary,hun
-Iceland,isl
-India,ind
-Indonesia,idn
-Iran,irn
-Iraq,irq
-Ireland,irl
-Israel,isr
-Italy,ita
-Jamaica,jam
-Japan,jpn
-Jordan,jor
-Kazakhstan,kaz
-Kenya,ken
-Kiribati,kir
-Kosovo,kos
-Kuwait,kwt
-Kyrgyz Republic,kgz
-Lao,lao
-Latvia,lva
-Lebanon,lbn
-Lesotho,lso
-Liberia,lbr
-Libya,lby
-Lithuania,ltu
-Luxembourg,lux
-"Macao, China",mac
-"Macedonia, FYR",mkd
-Madagascar,mdg
-Malawi,mwi
-Malaysia,mys
-Maldives,mdv
-Mali,mli
-Malta,mlt
-Marshall Islands,mhl
-Mauritania,mrt
-Mauritius,mus
-Mexico,mex
-"Micronesia, Fed. Sts.",fsm
-Moldova,mda
-Monaco,mco
-Mongolia,mng
-Montenegro,mne
-Morocco,mar
-Mozambique,moz
-Myanmar,mmr
-Namibia,nam
-Nauru,nru
-Nepal,npl
-Netherlands,nld
-New Zealand,nzl
-Nicaragua,nic
-Niger,ner
-Nigeria,nga
-North Korea,prk
-Norway,nor
-Oman,omn
-Pakistan,pak
-Palau,plw
-Panama,pan
-Papua New Guinea,png
-Paraguay,pry
-Peru,per
-Philippines,phl
-Poland,pol
-Portugal,prt
-Puerto Rico,pri
-Qatar,qat
-Romania,rou
-Russia,rus
-Rwanda,rwa
-Samoa,wsm
-San Marino,smr
-Sao Tome and Principe,stp
-Saudi Arabia,sau
-Senegal,sen
-Serbia,srb
-Seychelles,syc
-Sierra Leone,sle
-Singapore,sgp
-Sint Maarten (Dutch part),sxm
-Slovak Republic,svk
-Slovenia,svn
-Solomon Islands,slb
-Somalia,som
-South Africa,zaf
-South Korea,kor
-South Sudan,ssd
-Spain,esp
-Sri Lanka,lka
-St. Kitts and Nevis,kna
-St. Lucia,lca
-St. Vincent and the Grenadines,vct
-Sudan,sdn
-Suriname,sur
-Swaziland,swz
-Sweden,swe
-Switzerland,che
-Syria,syr
-Taiwan,twn
-Tajikistan,tjk
-Tanzania,tza
-Thailand,tha
-Timor-Leste,tls
-Togo,tgo
-Tonga,ton
-Trinidad and Tobago,tto
-Tunisia,tun
-Turkey,tur
-Turkmenistan,tkm
-Turks and Caicos Islands,tca
-Tuvalu,tuv
-Uganda,uga
-Ukraine,ukr
-United Arab Emirates,are
-United Kingdom,gbr
-United States,usa
-Uruguay,ury
-Uzbekistan,uzb
-Vanuatu,vut
-Venezuela,ven
-Vietnam,vnm
-West Bank and Gaza,pse
-Yemen,yem
-Zambia,zmb
-Zimbabwe,zwe
+geo,name
+afg,Afghanistan
+alb,Albania
+dza,Algeria
+and,Andorra
+ago,Angola
+atg,Antigua and Barbuda
+arg,Argentina
+arm,Armenia
+aus,Australia
+aut,Austria
+aze,Azerbaijan
+bhs,Bahamas
+bhr,Bahrain
+bgd,Bangladesh
+brb,Barbados
+blr,Belarus
+bel,Belgium
+blz,Belize
+ben,Benin
+btn,Bhutan
+bol,Bolivia
+bih,Bosnia and Herzegovina
+bwa,Botswana
+bra,Brazil
+brn,Brunei
+bgr,Bulgaria
+bfa,Burkina Faso
+bdi,Burundi
+khm,Cambodia
+cmr,Cameroon
+can,Canada
+cpv,Cape Verde
+caf,Central African Republic
+tcd,Chad
+chl,Chile
+chn,China
+col,Colombia
+com,Comoros
+cod,"Congo, Dem. Rep."
+cog,"Congo, Rep."
+cri,Costa Rica
+civ,Cote d'Ivoire
+hrv,Croatia
+cub,Cuba
+cyp,Cyprus
+cze,Czech Republic
+dnk,Denmark
+dji,Djibouti
+dma,Dominica
+dom,Dominican Republic
+ecu,Ecuador
+egy,Egypt
+slv,El Salvador
+gnq,Equatorial Guinea
+eri,Eritrea
+est,Estonia
+eth,Ethiopia
+fji,Fiji
+fin,Finland
+fra,France
+gab,Gabon
+gmb,Gambia
+geo,Georgia
+deu,Germany
+gha,Ghana
+grc,Greece
+grd,Grenada
+gtm,Guatemala
+gin,Guinea
+gnb,Guinea-Bissau
+guy,Guyana
+hti,Haiti
+hnd,Honduras
+hkg,"Hong Kong, China"
+hun,Hungary
+isl,Iceland
+ind,India
+idn,Indonesia
+irn,Iran
+irq,Iraq
+irl,Ireland
+isr,Israel
+ita,Italy
+jam,Jamaica
+jpn,Japan
+jor,Jordan
+kaz,Kazakhstan
+ken,Kenya
+kir,Kiribati
+prk,North Korea
+kor,South Korea
+kwt,Kuwait
+kgz,Kyrgyz Republic
+lao,Lao
+lva,Latvia
+lbn,Lebanon
+lso,Lesotho
+lbr,Liberia
+lby,Libya
+ltu,Lithuania
+lux,Luxembourg
+mkd,"Macedonia, FYR"
+mdg,Madagascar
+mwi,Malawi
+mys,Malaysia
+mdv,Maldives
+mli,Mali
+mlt,Malta
+mhl,Marshall Islands
+mrt,Mauritania
+mus,Mauritius
+mex,Mexico
+fsm,"Micronesia, Fed. Sts."
+mda,Moldova
+mco,Monaco
+mng,Mongolia
+mne,Montenegro
+mar,Morocco
+moz,Mozambique
+mmr,Myanmar
+nam,Namibia
+nru,Nauru
+npl,Nepal
+nld,Netherlands
+nzl,New Zealand
+nic,Nicaragua
+ner,Niger
+nga,Nigeria
+nor,Norway
+omn,Oman
+pak,Pakistan
+plw,Palau
+pan,Panama
+png,Papua New Guinea
+pry,Paraguay
+per,Peru
+phl,Philippines
+pol,Poland
+prt,Portugal
+qat,Qatar
+rou,Romania
+rus,Russia
+rwa,Rwanda
+kna,St. Kitts and Nevis
+lca,St. Lucia
+vct,St. Vincent and the Grenadines
+wsm,Samoa
+smr,San Marino
+stp,Sao Tome and Principe
+sau,Saudi Arabia
+sen,Senegal
+srb,Serbia
+syc,Seychelles
+sle,Sierra Leone
+sgp,Singapore
+svk,Slovak Republic
+svn,Slovenia
+slb,Solomon Islands
+som,Somalia
+zaf,South Africa
+ssd,South Sudan
+esp,Spain
+lka,Sri Lanka
+sdn,Sudan
+sur,Suriname
+swz,Swaziland
+swe,Sweden
+che,Switzerland
+syr,Syria
+twn,Taiwan
+tjk,Tajikistan
+tza,Tanzania
+tha,Thailand
+tls,Timor-Leste
+tgo,Togo
+ton,Tonga
+tto,Trinidad and Tobago
+tun,Tunisia
+tur,Turkey
+tkm,Turkmenistan
+tuv,Tuvalu
+uga,Uganda
+ukr,Ukraine
+are,United Arab Emirates
+gbr,United Kingdom
+usa,United States
+ury,Uruguay
+uzb,Uzbekistan
+vut,Vanuatu
+ven,Venezuela
+vnm,Vietnam
+pse,Palestine
+yem,Yemen
+zmb,Zambia
+zwe,Zimbabwe
