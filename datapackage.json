@@ -7,7 +7,7 @@
     "description": "",
     "author": "",
     "license": "",
-    "created": "2020-02-06T12:35:49.505056+00:00",
+    "created": "2021-05-04T21:53:07.011494+00:00",
     "resources": [
         {
             "name": "ddf--concepts",
@@ -40,6 +40,27 @@
                     },
                     {
                         "name": "gdp_total_ppp_inflation_adjusted"
+                    }
+                ],
+                "primaryKey": [
+                    "geo",
+                    "time"
+                ]
+            }
+        },
+        {
+            "name": "ddf--datapoints--gdpcapcppp_gr_pc--by--geo--time",
+            "path": "ddf--datapoints--gdpcapcppp_gr_pc--by--geo--time.csv",
+            "schema": {
+                "fields": [
+                    {
+                        "name": "geo"
+                    },
+                    {
+                        "name": "time"
+                    },
+                    {
+                        "name": "gdpcapcppp_gr_pc"
                     }
                 ],
                 "primaryKey": [
@@ -126,6 +147,16 @@
                 "value": "gdp_total_ppp_inflation_adjusted",
                 "resources": [
                     "ddf--datapoints--gdp_total_ppp_inflation_adjusted--by--geo--time"
+                ]
+            },
+            {
+                "primaryKey": [
+                    "geo",
+                    "time"
+                ],
+                "value": "gdpcapcppp_gr_pc",
+                "resources": [
+                    "ddf--datapoints--gdpcapcppp_gr_pc--by--geo--time"
                 ]
             },
             {
