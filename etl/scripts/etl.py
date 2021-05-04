@@ -13,7 +13,8 @@ DIMENSIONS = ['geo', 'time']
 OUT_DIR = '../../'
 
 COLUMN_TO_CONCEPT = {'Income per person': 'income_per_person_gdppercapita_ppp_inflation_adjusted',
-                     'GDP total': 'gdp_total_ppp_inflation_adjusted'}
+                     'GDP total': 'gdp_total_ppp_inflation_adjusted',
+                     'GDP per capita growth (%)': 'gdpcapcppp_gr_pc'}
 
 
 def gen_datapoints(df_: pd.DataFrame):
