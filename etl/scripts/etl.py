@@ -30,7 +30,7 @@ def create_geo_domain(df: pd.DataFrame) -> pd.DataFrame:
 
 def main():
     print('running etl...')
-    data = pd.read_excel(open_google_spreadsheet(DOCID), sheet_name=SHEET)
+    data = pd.read_excel(open_google_spreadsheet(DOCID), sheet_name=SHEET, dtype={'time': int})
 
     measures = list()
 
