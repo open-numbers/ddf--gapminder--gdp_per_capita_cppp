@@ -6,7 +6,7 @@ import pandas as pd
 from ddf_utils.io import open_google_spreadsheet, serve_datapoint
 
 
-DOCID = '1gZZ28UiWCVue-tFHMEVOvSO58x7x-w20E23l1wZTR3E'
+DOCID = '17p7CPobPSyWb5dmVyf_bmZg9Jbh4PjlRPc0G1tJjTUk'
 SHEET = 'data-for-countries-etc-by-year'
 
 DIMENSIONS = ['geo', 'time']
