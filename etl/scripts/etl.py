@@ -6,7 +6,7 @@ import pandas as pd
 from ddf_utils.io import open_google_spreadsheet, serve_datapoint
 
 
-DOCID = '1gZZ28UiWCVue-tFHMEVOvSO58x7x-w20E23l1wZTR3E'
+DOCID = '17p7CPobPSyWb5dmVyf_bmZg9Jbh4PjlRPc0G1tJjTUk'
 SHEET = 'data-for-countries-etc-by-year'
 
 DIMENSIONS = ['geo', 'time']
@@ -30,7 +30,7 @@ def create_geo_domain(df: pd.DataFrame) -> pd.DataFrame:
 
 def main():
     print('running etl...')
-    data = pd.read_excel(open_google_spreadsheet(DOCID), sheet_name=SHEET)
+    data = pd.read_excel(open_google_spreadsheet(DOCID), sheet_name=SHEET, dtype={'time': int})
 
     measures = list()
 
